@@ -59,6 +59,11 @@ def main():
     return json.dumps(response)
 
 
+@app.route('/')
+def test():
+    return 'тест'
+
+
 def handle_dialog(req, res):
     user_id = req['session']['user_id']
 
